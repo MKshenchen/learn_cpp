@@ -1,4 +1,4 @@
-# First
+# compile
 run ```make``` to compile
 
 # cin: test_cin
@@ -21,3 +21,5 @@ cuz input stream is set an invalid state.
 # getline: test_getline
 ps: need import <string>
 read a line char and assignment  to a string.
+
+# 项目参考地址: https://blog.csdn.net/wateryouyo/article/details/60874005
