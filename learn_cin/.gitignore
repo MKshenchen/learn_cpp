@@ -1,0 +1,6 @@
+*.o
+
+test_cin
+test_cin_get
+test_cin_getline
+test_getline
