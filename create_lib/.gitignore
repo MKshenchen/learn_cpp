@@ -1,0 +1,5 @@
+*.o
+*.a
+*.so
+main_a
+main_so
