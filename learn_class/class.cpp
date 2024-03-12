@@ -1,13 +1,14 @@
-#include <iostream>
 #include "class.h"
+#include <iostream>
+#include <iterator>
 
-Per:;Per(){
-	    struct Person n = {"wr", 28};
+Person::Person() : p{"xx", 27} {}
+
+Person::Person(const std::string &name, const int &age) {
+  p.name = name;
+  p.age = age;
 }
 
-Per::Per(const std::string &str, const int &ag){
-	struct Person n = {str, ag);
+void Person::showPer() {
+  std::cout << "name: " << p.name << ", age: " << p.age << std::endl;
 }
-
-void Per::newName(Person per, std::string n){
-	

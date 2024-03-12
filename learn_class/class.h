@@ -1,16 +1,14 @@
 #include <string>
 
-class Per{
-	private:
-		struct Person{
-			std::string name;
-			int age;
-		};
+class Person {
+  struct Pers {
+    std::string name;
+    int age;
+  };
+  Pers p;
 
-	public:
-		Per();
-		Per(const std::string &str, const int &ag);
-		void newName(Person per, std:string n);
-		void newAge(Person per, int ag);
-		void show();
-}
+public:
+  Person();
+  Person(const std::string &name, const int &age);
+  void showPer();
+};
