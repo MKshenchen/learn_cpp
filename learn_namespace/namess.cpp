@@ -1,13 +1,12 @@
-#include <iostream>
 #include "names.h"
+#include <iostream>
 
-int main(){
-	using debts::Debt;
-	using debts::getDebt;
-	using debts::showDebt;
-
-	Debt n;
-	getDebt(n);
-	showDebt(n);
-	return 0;
+int main() {
+  using person::getPers;
+  using person::Pers;
+  using person::showPers;
+  Pers p;
+  getPers(p);
+  showPers(p);
+  return 0;
 }

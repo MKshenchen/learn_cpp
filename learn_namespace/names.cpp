@@ -1,28 +1,19 @@
 #include <iostream>
 #include "names.h"
 
-namespace pers{
+namespace person{
 	using std::cin;
 	using std::cout;
-	void getPerson(Person & p){
+	using std::endl;
+	void getPers(Pers &p){
 		cout << "enter name: \n";
 		cin >> p.name;
-		cout << "enter age: \n";
-		cin >> p.age;
+	        	cout << "enter bir_year: \n";
+		cin >> p.bir_year;
+		cout << "enter bir_mon: \n";
+		cin >> p.bir_mon;
 	}
-	void showPerson(const Person & p){
-		std::cout << "name: " << p.name << ", age: " << p.age << std::endl;
-	}
-}
-
-namespace debts{
-	void getDebt(Debt & d){
-		getPerson(d.name);
-		std::cout << "enter salary: \n";
-		std::cin >> d.salary;
-	}
-	void showDebt(const Debt & d){
-		showPerson(d.name);
-		std::cout << "salary: " << d.salary << std::endl;
+	void showPers(const Pers &p){
+		cout << "name: " << p.name << ", bir_year: " << p.bir_year << ", bir_mon: " << p.bir_mon << ".\n";
 	}
 }

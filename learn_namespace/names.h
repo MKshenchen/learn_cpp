@@ -1,20 +1,11 @@
 #include <string>
 
-namespace pers{
-	struct Person{
+namespace person{
+	struct Pers{
 		std::string name;
-		int age;
+		int bir_year;
+		int bir_mon;
 	};
-	void getPerson(Person &);
-	void showPerson(const Person &);
-}
-
-namespace debts{
-	using namespace pers;
-	struct Debt{
-		Person name;
-		double salary;
-	};
-	void getDebt(Debt &);
-	void showDebt(const Debt &);
+	void getPers(Pers &p);
+	void showPers(const Pers &p);
 }
